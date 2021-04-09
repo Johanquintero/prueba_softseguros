@@ -1,1 +1,1 @@
-export const apiURL = 'https://prueba-union-ser.vercel.app/api';
+export const apiURL = 'https://softsegurosp15.herokuapp.com/api';
