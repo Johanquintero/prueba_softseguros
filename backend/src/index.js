@@ -146,5 +146,3 @@ app.delete('/api/client/:document', async (req, res) => {
 app.listen(port, () => {
     console.log("server running");
 })
-
-// app.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));
