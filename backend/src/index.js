@@ -13,9 +13,8 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan('dev'));
 
-app.get('/', (req, res) => {
-    res.send("Hello world!!");
-})
+app.get('/', (req, res) => res.send('Home Page Route'));
+
 
 //Buscador de clientes por nombre like
 app.post('/api/client-search/', async (req, res) => {
@@ -147,3 +146,5 @@ app.delete('/api/client/:document', async (req, res) => {
 app.listen(port, () => {
     console.log("server running");
 })
+
+// app.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));
